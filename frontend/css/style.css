@@ -1,5 +1,5 @@
 @import url(./reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
 :root {
   --neon-purple: #bc13fe;
@@ -8,7 +8,7 @@
 
 body {
   /*background: linear-gradient(90deg, rgba(188,19,254,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(188,19,254,1) 100%);*/
-  background-image: url('../img/brickwall.jpg');
+  background-image: url("../img/brickwall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center
+  align-items: center;
 }
 
 .title-wrap {
@@ -27,19 +27,14 @@ body {
 }
 
 .title {
-  font-family: 'Tilt Prism', cursive;
+  font-family: "Tilt Prism", cursive;
   font-size: 65px;
   text-transform: uppercase;
   font-weight: 800;
   color: #fe59c2;
 
-  text-shadow: 
-    0 0 7px #fe59c2,
-    0 0 10px #fe59c2,
-    0 0 21px #fe59c2,
-    0 0 42px #fe59c2,
-    0 0 84px #fe59c2,
-    0 0 102px #fe59c2;
+  text-shadow: 0 0 7px #fe59c2, 0 0 10px #fe59c2, 0 0 21px #fe59c2,
+    0 0 42px #fe59c2, 0 0 84px #fe59c2, 0 0 102px #fe59c2;
 }
 
 .blik1 {
@@ -53,20 +48,19 @@ body {
 .form {
   width: 450px;
 
-  background-color:black;
+  background-color: black;
 
   border: 4px solid var(--neon-purple);
   border-radius: 30px;
-  box-shadow: 
-    0 0 10px var(--neon-purple),
-    0 0 30px var(--neon-purple),
+  box-shadow: 0 0 10px var(--neon-purple), 0 0 30px var(--neon-purple),
     0 0 50px var(--neon-purple);
 
   margin: 0 auto;
   padding: 30px;
 }
 
-.login, .password {
+.login,
+.password {
   display: flex;
   flex-direction: column;
 
@@ -74,35 +68,32 @@ body {
   gap: 15px;
 }
 
-.login__title, .password__title {
+.login__title,
+.password__title {
   font-size: 30px;
 
   color: var(--neon-purple);
-  text-shadow: 
-    0 0 7px var(--neon-purple),
-    0 0 10px var(--neon-purple),
+  text-shadow: 0 0 7px var(--neon-purple), 0 0 10px var(--neon-purple),
     0 0 21px var(--neon-purple);
 }
 
-.login__input, .password__input {
+.login__input,
+.password__input {
   border: 1px solid var(--neon-purple);
   border-radius: 10px;
 
   transition: all 0.5s linear;
-  box-shadow: 
-    0 0 2px var(--neon-purple),
-    0 0 7px var(--neon-purple),
+  box-shadow: 0 0 2px var(--neon-purple), 0 0 7px var(--neon-purple),
     0 0 14px var(--neon-purple);
 
   font-size: 25px;
 }
 
-.login__input:focus, .password__input:focus {
+.login__input:focus,
+.password__input:focus {
   transition: all 0.5s linear;
   border: 1px solid var(--neon-pink);
-  box-shadow: 
-    0 0 2px var(--neon-pink),
-    0 0 7px var(--neon-pink),
+  box-shadow: 0 0 2px var(--neon-pink), 0 0 7px var(--neon-pink),
     0 0 14px var(--neon-pink);
 }
 
@@ -120,26 +111,26 @@ body {
   font-size: 22px;
   color: var(--neon-purple);
 
-  box-shadow: 
-    0 0 2px var(--neon-purple),
-    0 0 7px var(--neon-purple),
+  box-shadow: 0 0 2px var(--neon-purple), 0 0 7px var(--neon-purple),
     0 0 14px var(--neon-purple);
 
-  text-shadow: 
-    0 0 7px var(--neon-purple),
-    0 0 10px var(--neon-purple),
-    0 0 21px var(--neon-purple),
-    0 0 42px var(--neon-purple);
+  text-shadow: 0 0 7px var(--neon-purple), 0 0 10px var(--neon-purple),
+    0 0 21px var(--neon-purple), 0 0 42px var(--neon-purple);
+
+  transition: all 1s linear;
 }
 
 .btn__auth:hover {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 
   border: 1px solid #43ec01;
-  box-shadow: 
-    0 0 2px #43ec01,
-    0 0 7px #43ec01,
-    0 0 14px #43ec01;
+  box-shadow: 0 0 2px #43ec01, 0 0 7px #43ec01, 0 0 14px #43ec01;
+}
+
+.btn__auth:active {
+  transition: all 0.1s linear;
+
+  background: #43ec01;
 }
 
 /*Animation*/
@@ -148,31 +139,31 @@ body {
     color: inherit;
     text-shadow: inherit;
   }
-  21%{
-      color: #0b3960;
+  21% {
+    color: #0b3960;
   }
   22% {
-      text-shadow: none;
+    text-shadow: none;
   }
   23% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   24% {
-      color: #0b3960;
-      text-shadow: none;
+    color: #0b3960;
+    text-shadow: none;
   }
   25% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   34% {
-      color: #0b3960;
-      text-shadow: none;
+    color: #0b3960;
+    text-shadow: none;
   }
   34.5% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
 }
 
@@ -181,30 +172,30 @@ body {
     color: inherit;
     text-shadow: inherit;
   }
-  79%{
-      color: #0b3960;
+  79% {
+    color: #0b3960;
   }
   80% {
-      text-shadow: none;
+    text-shadow: none;
   }
   81% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   82% {
-      color: #0b3960;
-      text-shadow: none;
+    color: #0b3960;
+    text-shadow: none;
   }
   83% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
   92% {
-      color: #0b3960;
-      text-shadow: none;
+    color: #0b3960;
+    text-shadow: none;
   }
   92.5% {
-      color: inherit;
-      text-shadow: inherit;
+    color: inherit;
+    text-shadow: inherit;
   }
 }
