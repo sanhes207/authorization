@@ -81,10 +81,14 @@ body {
 .password__input {
   border: 1px solid var(--neon-purple);
   border-radius: 10px;
+  padding-left: 15px;
+
+  color: var(--neon-pink);
+  text-shadow: 0 0 7px var(--neon-purple), 0 0 10px var(--neon-purple),
+    0 0 21px var(--neon-purple);
 
   transition: all 0.5s linear;
-  box-shadow: 0 0 2px var(--neon-purple), 0 0 7px var(--neon-purple),
-    0 0 14px var(--neon-purple);
+  box-shadow: 0 0 7px var(--neon-purple);
 
   font-size: 25px;
 }
